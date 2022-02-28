@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root {
+  --navbar-height: 59px;
+}
+body {
+  background-image: url(1233.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 1;
+}
+
+/* Navigation Bar */
+#navbar {
+  display: flex;
+  /* justify-content: left;*/
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 80%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+}
+#navbar ul {
+  display: flex;
+  font-family: "Baloo Bhaina 2", cursive;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+#navbar ul li a {
+  color: white;
+  display: block;
+  padding: 3px 22px;
+  margin: 12px 23px;
+  border-radius: 20px;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+#contaier {
+  align-items: center;
+  background-color: transparent;
+  padding: 48px 51px 366px 25px;
+}
+#contaier h2 {
+  color: aliceblue;
+  font-style: bold;
+  font-family: "Roboto Serif";
+  margin: 100px 47px 44px 173px;
+  font-size: 45px;
+}
+#contaier h3 {
+  color: aliceblue;
+  font-family: "Roboto Serif";
+  font-size: 35px;
+  margin-top: 12px;
+  margin-left: 88px;
+}
+#contaier h4 {
+  color: aliceblue;
+  font-family: "Roboto Serif";
+  justify-content: center;
+  font-size: 22px;
+  margin-top: 12px;
+  margin-left: 88px;
+}
+#about {
+  /* border: 2px blue solid;*/
+
+  font-family: "Roboto Serif", sans-serif;
+  border-radius: 69px;
+  margin-top: 12px;
+  margin-left: 12px;
+  margin-right: 12px;
+  background-color: aliceblue;
+  color: #555;
+  padding: 46px 51px 75px 440px;
+  align-items: center;
+  z-index: 0;
+}
+#about h3 {
+  margin: 21px 32px;
+  font-size: 36px;
+}
+#about p {
+  margin: 21px 32px;
+  font-size: 18px;
+}
+#about img {
+  position: absolute;
+  overflow: hidden;
+  left: 120px;
+  top: 855px;
+  height: auto;
+  border-radius: 22px;
+}
+
+.con {
+  font-family: 'Hubballi', cursive;
+  font-size: 20px;
+  border-radius: 23px;
+  width: 78%;
+  color: #555;
+  margin: 44px 89px 25px 72px;
+  padding: 55px 23px 69px 53px;
+  background-color:aliceblue;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.html {
+  width: 90%;
+  background-color: rgb(152, 152, 243);
+}
+.css {
+  width: 80%;
+  background-color:  rgb(152, 152, 243);
+}
+.js {
+  width: 65%;
+  background-color:  rgb(152, 152, 243);
+}
+.php {
+  width: 60%;
+  background-color:  rgb(152, 152, 243);
+}
+.python{
+  width: 70%;
+  background-color:  rgb(152, 152, 243);
+}
+
+
+.container1 {
+ 
+  width: 90%;
+  border: 2px green solid;
+  margin: 50px auto;
+}
+.heading {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+
+.card {
+  
+  width: 20%;
+  background: transparent;
+  border: 2px #fff solid;
+  margin-bottom: 50px;
+  transition: 0.3s;
+}
+
+.card-header {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  text-align: center;
+  padding: 50px 10px;
+  background: linear-gradient(to right, #fcfcfc, #ffffff);
+  color: #555;
+}
+
+.card-body {
+
+  color:whitesmoke;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 18px;
+  background-color: transparent;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .card {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .container {
+    width: 100%;
+  }
+
+  .heading {
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .card {
+    width: 80%;
+  }
+}
+
+.contac{
+  border: 2px red solid;
+  border-radius: 23px;
+  height: 169px;
+  background-color: aliceblue;
+  padding: 40px 71px 54px 65px;
+  margin: 12px 23px 23px 34px;
+  
+}
+.contac h2{
+  font-size: 36px;
+  
+}
+.cont{
+  border: 2px blue solid;
+  
+}
+.row {
+  display: flex;
+}
+
+
+.column {
+  font-family: 'Fredoka', sans-serif;
+  flex: 30%;
+  margin: 15px;
+  padding: 16px 40px 30px 44px;
+  
+  border-radius: 10px
+  
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.button{
+  font-family: 'Fredoka', sans-serif;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  
+}
+
+footer {
+ 
+  padding: 3px;
+  background-color: black;
+  color: white;
+}
